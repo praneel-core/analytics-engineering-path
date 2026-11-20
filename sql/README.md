@@ -33,6 +33,10 @@ dataset (14 tables, ~700k rows), **250 practice questions with hints but no answ
 Core relationships are valid (no orphan orders, items, payments or returns) while the *content* is deliberately messy: NULLs,
 duplicates, inconsistent casing, stray spaces, late-arriving rows, failed/refunded payments, discontinued products, stuck orders, and more.
 
+### Data model
+
+![Data model](ecommerce_lab_data_model.png)
+
 ## The 250 questions
 
 | Level | Section | Questions |
@@ -86,6 +90,7 @@ sql/
 ├── 02_sql_practice_250_questions.ipynb         <- the exercises (no answers)
 ├── 03_sql_analytics_engineering_reference.md   <- concept reference
 ├── 04_sql_learning_tracker.md                  <- progress checklist
+├── ecommerce_lab_data_model.png                <- data model diagram (tables, keys, cardinality)
 ├── DATA_QUALITY_ISSUES.md                      <- planted data problems (spoilers)
 └── tools/                                      <- generators + validators (question text only, no solutions)
     ├── q_level*.py                             <- the question bank, source of truth for notebook and tracker
